@@ -1,0 +1,99 @@
+.advantages {
+  margin-bottom: 28px;
+}
+
+.advantages__list {
+  @include list-unstyled;
+}
+
+.advantages__item {
+  min-height: 120px;
+  margin-bottom: 4px;
+  line-height: 1.18;
+  color: #000000;
+  font-size: 17px;
+  font-weight: bold;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 54px;
+  }
+
+  &--flower::before {
+    background: url("../img/icon-feature-flower.svg") no-repeat center top;
+  }
+
+  &--money::before {
+    background: url("../img/icon-feature-money.svg") no-repeat center top;
+  }
+
+  &--heart::before {
+    background: url("../img/icon-feature-heart.svg") no-repeat center top;
+  }
+
+  &--ravel::before {
+    background: url("../img/icon-feature-ball.svg") no-repeat center top;
+  }
+
+  &--rocket::before {
+    background: url("../img/icon-feature-rocket.svg") no-repeat center top;
+  }
+
+  &--box::before {
+    background: url("../img/icon-feature-gift.svg") no-repeat center top;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantages {
+    margin-bottom: 58px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages__caption {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .advantages__list {
+    width: 295px;
+    margin-right: 35px;
+  }
+
+  .advantages__list:last-child {
+    margin-right: 0;
+  }
+
+  .advantages__item {
+    font-size: 20px;
+    margin-bottom: 35px;
+
+    &::before {
+      height: 50px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    margin-bottom: 63px;
+  }
+
+  .advantages__wrapper {
+    margin-left: 175px;
+  }
+
+  .advantages__list {
+    margin-right: 55px;
+  }
+}

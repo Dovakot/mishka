@@ -1,0 +1,29 @@
+.radio-size__label {
+  @include form-label;
+
+  display: block;
+  width: 80px;
+  padding: 10px;
+  border: 2px solid $color-gray;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    border-color: #c7c7c7;
+  }
+}
+
+.radio-size__field:checked + .radio-size__label {
+  border-color: $color-craiola;
+}
+
+.radio-size:focus + .radio-size__label {
+  outline: thin dotted;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-size__label {
+    width: 112px;
+  }
+}

@@ -1,0 +1,36 @@
+.slider__toggles {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.slider__toggle {
+  min-width: 130px;
+  height: 52px;
+  background-color: #ffffff;
+  border: 1px solid $color-gray;
+  cursor: pointer;
+
+  &--prev {
+    margin-right: -1px;
+    background: url("../img/icon-left-arrow.svg") no-repeat center center;
+  }
+
+  &--next {
+    background: url("../img/icon-right-arrow.svg") no-repeat center center;
+  }
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .slider__toggle {
+    border: 0;
+    min-width: 90px;
+  }
+}

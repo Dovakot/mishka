@@ -1,0 +1,39 @@
+.headline {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  color: $color-craiola;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    display: inherit;
+    flex-grow: 1;
+    height: 1px;
+    margin-left: 25px;
+    background-color: $color-craiola;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .headline {
+    align-items: flex-start;
+    width: 168px;
+    padding: 14px 20px 0 0;
+
+    &::after {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .headline {
+    width: 173px;
+    padding-left: 10px;
+    justify-content: center;
+  }
+}

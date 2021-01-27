@@ -1,0 +1,18 @@
+/* Цвета */
+$color-craiola: #63d1bb;
+$color-dark-craiola: #56c3b2;
+$color-aquamarine: #46c1ae;
+$color-dark-gray: #444444;
+$color-gray: #ececec;
+$color-light-gray: #f1f1f1;
+
+/* Размеры вьюпорта */
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
+/* Lля ретинового медиавыражения */
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+/* Тень */
+$shadow: 0 1px 0 0 $color-gray, inset 0 1px 0 0 $color-gray;

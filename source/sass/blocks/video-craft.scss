@@ -1,0 +1,15 @@
+.video-craft {
+  margin-bottom: 55px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-craft {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-craft {
+    margin-bottom: 105px;
+  }
+}

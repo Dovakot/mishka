@@ -1,0 +1,44 @@
+.header {
+  text-align: center;
+}
+
+.header__logo {
+  display: inline-block;
+  margin: 20px 0;
+
+  &[href]:hover {
+    opacity: 0.6;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header__logo {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 10;
+    transform: translateY(-50%);
+    margin: 0;
+  }
+
+  .header__logo-image {
+    width: 112px;
+    height: 46px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__logo {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .header__logo-image {
+    width: 148px;
+    height: 73px;
+  }
+}

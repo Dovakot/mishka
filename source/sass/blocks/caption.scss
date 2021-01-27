@@ -1,0 +1,19 @@
+.caption {
+  margin: 0 0 30px;
+  line-height: 1.2;
+  color: #000000;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media (min-width: $tablet-width) {
+  .caption {
+    font-size: 43px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .caption {
+    font-size: 53px;
+  }
+}

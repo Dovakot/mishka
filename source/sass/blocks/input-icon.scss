@@ -1,0 +1,51 @@
+.input-icon {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+}
+
+.input-icon__email {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  z-index: -1;
+  width: 32px;
+  height: 26px;
+  margin-top: -13px;
+}
+
+.input-icon__svg {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  z-index: -1;
+  width: 32px;
+  height: 26px;
+  margin-top: -13px;
+  fill: #cccccc;
+
+  &--mail {
+    height: 32px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .input-icon {
+    width: 503px;
+  }
+
+  .input-icon__svg {
+    right: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .input-icon {
+    width: 700px;
+  }
+
+  .input-icon__svg {
+    right: 5px;
+  }
+}

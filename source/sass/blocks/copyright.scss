@@ -1,0 +1,27 @@
+.copyright__text {
+  color: #000000;
+  font-size: 19px;
+  margin-right: 20px;
+}
+
+.copyright__link {
+  display: inline-block;
+  vertical-align: middle;
+
+  &::after {
+    content: "";
+    display: inherit;
+    vertical-align: middle;
+    width: 27px;
+    height: 34px;
+    background: url("../img/logo-htmlacademy.svg") no-repeat;
+  }
+
+  &:hover::after {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

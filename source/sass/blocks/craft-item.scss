@@ -1,0 +1,128 @@
+.craft-item {
+  padding-bottom: 35px;
+  box-shadow: inset 0 0 0 1px $color-gray;
+
+  &:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.craft-item__caption {
+  margin: 0 35px;
+  padding: 25px 0 25px 55px;
+  font-size: 17px;
+  line-height: 1.3;
+  background: url("../img/icon-video.svg") no-repeat left center;
+}
+
+.craft-item__wrapper-image {
+  position: relative;
+  margin: 0 0 30px;
+  background-color: $color-light-gray;
+}
+
+.craft-item__play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 101px;
+  height: 77px;
+  margin: -38px 0 0 -50px;
+  background: url("../img/icon-play.svg") no-repeat;
+  border: 0;
+  transition: 0.2s;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.2);
+  }
+
+  &:active {
+    transform: scale(0.8);
+    opacity: 0.3;
+  }
+}
+
+.craft-item__image {
+  display: block;
+  width: 100%;
+}
+
+.craft-item__group {
+  padding: 0 35px 0;
+}
+
+.craft-item__description {
+  margin: 0 0 27px;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.craft-item__button {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .craft-item {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 48px;
+  }
+
+  .craft-item__wrapper-image {
+    order: -1;
+    height: 455px;
+    margin-bottom: 10px;
+  }
+
+  .craft-item__caption {
+    margin: 0 40px 10px;
+    padding-left: 70px;
+    font-size: 20px;
+  }
+
+  .craft-item__description {
+    margin-bottom: 35px;
+    font-size: 15px;
+    line-height: 1.9;
+  }
+
+  .craft-item__group {
+    padding: 0 40px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .craft-item {
+    position: relative;
+    display: block;
+    min-height: 455px;
+    padding-left: 680px;
+  }
+
+  .craft-item__wrapper-image {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 680px;
+  }
+
+  .craft-item__caption {
+    align-self: flex-start;
+    width: 230px;
+    margin: 0 0 30px 80px;
+    padding: 93px 0 0 0;
+    background-position: left 40px;
+  }
+
+  .craft-item__group {
+    width: 370px;
+    padding: 0 60px 0 80px;
+  }
+
+  .craft-item__description {
+    margin-bottom: 45px;
+    line-height: 2;
+  }
+}

@@ -1,0 +1,131 @@
+.catalog-item {
+  box-shadow: inset 0 0 0 1px $color-gray;
+}
+
+.catalog-item:hover .catalog-item__wrapper {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item__link {
+  display: block;
+  background-color: $color-light-gray;
+}
+
+.catalog-item__image {
+  display: block;
+  width: 100%;
+}
+
+.catalog-item__caption {
+  margin: 0 0 10px;
+  font-size: 17px;
+  line-height: 1.4;
+}
+
+.catalog-item__description {
+  margin: 0;
+  font-size: 13px;
+}
+
+.catalog-item__group {
+  padding: 28px 0 17px;
+  margin: 0 30px;
+
+  &:last-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    border-top: 1px solid $color-gray;
+  }
+}
+
+.catalog-item__price {
+  width: 175px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.catalog-item__cart {
+  display: inline-block;
+  vertical-align: middle;
+
+  &:hover svg {
+    fill: #77d7c4;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.catalog-item__svg {
+  fill: #d3d2d2;
+}
+
+
+@media (min-width: $tablet-width) {
+  .catalog-item {
+    display: flex;
+    margin-bottom: 53px;
+  }
+
+  .catalog-item__link {
+    width: 50%;
+  }
+
+  .catalog-item__caption {
+    font-size: 20px;
+  }
+
+  .catalog-item__description {
+    font-size: 15px;
+  }
+
+  .catalog-item__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    min-height: 335px;
+  }
+
+  .catalog-item__group {
+    padding-top: 22px;
+
+    &:last-child {
+      margin-top: auto;
+      padding: 23px 0 27px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-item {
+    display: block;
+    width: 315px;
+    margin-bottom: 60px;
+  }
+
+  .catalog-item__wrapper {
+    width: 100%;
+    height: calc(100% - 463px);
+    min-height: calc(100% - 463px);
+  }
+
+  .catalog-item__link {
+    width: 100%;
+    height: 460px;
+    margin-bottom: 3px;
+  }
+
+  .catalog-item__caption {
+    line-height: 1.3;
+  }
+
+  .catalog-item__group:last-child {
+    padding: 20px 0 25px;
+  }
+}

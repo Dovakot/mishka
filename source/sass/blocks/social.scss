@@ -1,0 +1,29 @@
+.social__list {
+  @include list-unstyled;
+
+  display: inline-flex;
+  align-items: center;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.social__link {
+  display: block;
+
+  &:hover svg {
+    fill: #46c1ae;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social__list {
+    justify-content: flex-end;
+    width: 225px;
+  }
+}
